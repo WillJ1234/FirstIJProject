@@ -1,6 +1,9 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 public class Notes { //this is a comment to describe what things do
     //comments can go anywhere
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         System.out.print("How's it\t going\b"); // \n creates a new line between two phrases in print
         // \t creates a tab between print
@@ -30,7 +33,37 @@ public class Notes { //this is a comment to describe what things do
         short middle = 7943;
         float end = 3.56f;
         double two = 12.45;
-        System.out.print(middle + middle);
+        System.out.println(middle + middle);
+        //Boolean = true or false
+        //Char = 'a' can be another digit.
 
+        // Inputs
+        //Import java.util.scanner
+        Scanner keyb = new Scanner(System.in);
+        System.out.print("Whats  your favorite number?");
+        int num = keyb.nextInt();
+        System.out.println(num + " is a lucky number!");
+        //Garbage Collection
+        keyb.nextLine();
+        //Necessary anytime you want/need to input w/nextLIne AFTER ANY OTHER INPUT
+
+        //reading strings
+        //2 ways: next and nextLine
+        // next: grabs a single "word"
+        // nextLine processes all information up to and INCLUDING
+        //        THE END OF THE LINE
+        System.out.println(" Please enter your name:");
+        String name = keyb.nextLine();
+        System.out.println("Nice to meet you," + name);
+
+        //Examining the input buffer more
+        System.out.print("Enter 3 integers");
+        int val1 =keyb.nextInt();
+        int val2 = keyb.nextInt();
+        int val3 = keyb.nextInt();
+        System.out.println("The sum of which is: " +(val3+val2+val1));
+
+        Scanner inFile = new Scanner(new File("in.dat"));
+        val1 = inFile.nextInt();
     }
 }
