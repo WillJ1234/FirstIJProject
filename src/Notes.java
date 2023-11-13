@@ -33,6 +33,7 @@ public class Notes { //this is a comment to describe what things do
         short middle = 7943;
         float end = 3.56f;
         double two = 12.45;
+        System.out.print(5/0);
         System.out.println(middle + middle);
         //Boolean = true or false
         //Char = 'a' can be another digit.
@@ -65,5 +66,33 @@ public class Notes { //this is a comment to describe what things do
 
         Scanner inFile = new Scanner(new File("in.dat"));
         val1 = inFile.nextInt();
+        byte hello = keyb.nextByte();
+        //Constructions
+
+        //instance variables
+        //usually private
+       class chicken {
+            private boolean fly;
+            private int size;
+
+
+        //mutator methods
+
+            //accessor methods
+            public int getSize(){
+                return size;
+
+            }
+
+
+           /** GFX notes
+            * x increases right
+            * y increases down
+            *
+            *
+            */
+
+
+       }
     }
 }
