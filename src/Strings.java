@@ -31,7 +31,7 @@ public class Strings {
         System.out.println(s.indexOf("b"));
         System.out.println(s.lastIndexOf("b"));
         System.out.println(s.equals("d"));
-        System.out.println(s.compareTo("Cheese"));
+        System.out.println(s.compareTo("Austin"));
 
 
     }
